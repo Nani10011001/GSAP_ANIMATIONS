@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navanimation</title>
+   
+</head>
+<style>
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ body{
+    background-color: black;
+    color: white;
+ }
+nav{
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+padding: 30px 15px;
+}
+#part2{
+display: flex;
+gap: 20px;
+}
+h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    white-space: nowrap;
+}
+
+</style>
+<body>
+   <nav>
+   <h2>noxvoid</h2>
+    <div id="part2">
+        <h4>home</h4>
+        <h4>information</h4>
+        <h4>services</h4>
+        <h4>contact us</h4>
+    </div>
+   </nav>
+   <h1>nani coding course</h1>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+const tl=gsap.timeline();
+tl.from("h2",{
+    y:-30,
+    opacity:0,
+    delay:0.5,
+    duration:0.77,
+})
+tl.from("h4",{
+    y:-30,
+    opacity:0,
+    delay:0.5,
+    duration:0.77,
+    stagger:0.3,
+})
+tl.from("h1",{
+  y:20,
+    opacity:0,
+  duration:0.77,  
+  scale:0.2,
+})
+
+</script>
+</body>
+</html>

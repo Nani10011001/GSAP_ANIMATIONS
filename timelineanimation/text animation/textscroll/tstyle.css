@@ -1,0 +1,46 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height:100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body{
+    background-color: #111;
+   
+}
+#page1,#page2,#page3{
+    background-color: #111;
+    width: 100%;
+    height: 100vh;
+}
+#move{
+    background-color: #D9FF06;
+    display: flex;
+
+    padding: 2vw 0;
+    height: 200px; 
+    overflow: hidden;
+}
+#move img{
+    height: 80px;
+   margin:;ight:  100px;
+}
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap:3vw;
+    padding: 0 0.15vw;
+  
+   
+}
+
+#move h1{
+    font-size: 90px;
+   
+}
