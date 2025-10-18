@@ -1,6 +1,6 @@
 gsap.from("#page1 #box",{
     scale:0.2,
-    delay:1,
+    delay:0.5,
     duration:2,
     rotate:360,
 
